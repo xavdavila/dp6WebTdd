@@ -61,7 +61,7 @@ return [
         ],
 
         'mysql_test' => [
-            'driver' => 'mysql_test',
+            'driver' => 'mysql',
             'host' => env('DB_HOST_TEST', 'localhost'),
             'port' => env('DB_PORT_TEST', '3306'),
             'database' => env('DB_DATABASE_TEST', 'forge'),
