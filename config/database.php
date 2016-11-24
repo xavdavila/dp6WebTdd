@@ -62,11 +62,11 @@ return [
 
         'mysql_test' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST_TEST', 'localhost'),
-            'port' => env('DB_PORT_TEST', '3306'),
-            'database' => env('DB_DATABASE_TEST', 'forge'),
-            'username' => env('MYSQL_USER', env('DB_USERNAME_TEST', 'forge')),
-            'password' => env('MYSQL_PASSWORD', env('DB_PASSWORD_TEST', '')),
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('MYSQL_USER', env('DB_USERNAME', 'forge')),
+            'password' => env('MYSQL_PASSWORD', env('DB_PASSWORD', '')),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
