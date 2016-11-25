@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "dp6/tdd-source",
+    "description": "Tdd source based on laravel.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
