@@ -1,5 +1,6 @@
 {
     "name": "dp6/tdd",
+    "minimum-stability": "stable",
     "description": "Web project based on TDD and Lavarel 5.3",
     "type": "project",
     "license": "MIT",
@@ -10,6 +11,5 @@
             "email": "danielgrillz@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {}
 }
