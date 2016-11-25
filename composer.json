@@ -1,6 +1,6 @@
 {
     "name": "dp6/tdd",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "description": "Web project based on TDD and Lavarel 5.3",
     "type": "project",
@@ -17,6 +17,9 @@
         {
             "type": "path",
             "url": "../container"
+        },
+        {
+            "packagist": false
         }
     ],
     "autoload": {
