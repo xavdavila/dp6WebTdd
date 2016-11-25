@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Entity\PostsEntity as BE;
 
 class CreatePostController extends Controller
 {
+    const NAMEC = 'web';
     /**
      * Display a listing of the resource.
      *
@@ -25,6 +27,7 @@ class CreatePostController extends Controller
     public function create()
     {
         //
+        return view(self::NAMEC . '.posts.create');
     }
 
     /**
@@ -36,6 +39,8 @@ class CreatePostController extends Controller
     public function store(Request $request)
     {
         //
+        $be = new BE();
+        return $be->create($request->all());
     }
 
     /**
