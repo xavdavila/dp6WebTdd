@@ -18,5 +18,10 @@
             "type": "path",
             "url": "../container"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dp6\\": "../container"
+        } 
+    }
 }
