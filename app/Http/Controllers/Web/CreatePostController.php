@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\Web\PostRequest;
 use App\Http\Controllers\Controller;
 use App\Entity\PostsEntity as BE;
 
@@ -36,14 +37,9 @@ class CreatePostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
         //
-        $this->validate($request, [
-            'title' => 'required',
-            'content' => 'required'
-        ]);
-        
         $be = new BE();
         return $be->create($request->all());
     }
