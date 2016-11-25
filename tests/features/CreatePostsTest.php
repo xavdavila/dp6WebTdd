@@ -8,7 +8,7 @@ class CreatePostsTest extends FeatureTestCase
 		$title = 'Esta es una pregunta';
 		$content = 'Este es el contenido';
 
-		$this->actingAs($this->defaultUser());
+		$this->actingAs($user = $this->defaultUser());
 		
 		//When
 		$this->visit(route('posts.create'))
@@ -21,6 +21,7 @@ class CreatePostsTest extends FeatureTestCase
 			'title' => $title,
 			'content' => $content,
 			'pending' => true,
+			'user_id' => $user->id
 		]);
 
 		//Test a user is redirected to the posts details after creating it.
