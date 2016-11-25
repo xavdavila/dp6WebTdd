@@ -13,6 +13,6 @@ class PostsEntity
     	# code...
     	$obj = new ParentModel($data);
     	auth()->user()->posts()->save($obj);
-    	return $obj->title;
+    	return "Posts: " . $obj->title;
     }
 }

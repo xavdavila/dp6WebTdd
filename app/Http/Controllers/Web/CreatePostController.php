@@ -39,6 +39,11 @@ class CreatePostController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'title' => 'required',
+            'content' => 'required'
+        ]);
+        
         $be = new BE();
         return $be->create($request->all());
     }

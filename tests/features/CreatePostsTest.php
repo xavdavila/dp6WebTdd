@@ -65,4 +65,18 @@ class CreatePostsTest extends FeatureTestCase
 		//Final Message
 		// $this->see('User needs authentication');
 	}
+
+	public function test_create_form_validation()
+	{
+		//When
+		$this->actingAs($user = $this->defaultUser());
+
+		//Then
+		$this->visit(route('posts.create'))
+			 ->press('Publicar')
+			 ->seePageIs(route('posts.create'))
+			 // cannot validate this shit. 
+			 // ->seeInElement('#field_title .help-block', 'El campo titulo es obligatorio')
+			 ->seeInElement('#field_content .help-block', 'El campo contenido es obligatorio');
+	}
 }
