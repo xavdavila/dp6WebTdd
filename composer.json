@@ -3,6 +3,7 @@
     "description": "Web project based on TDD and Lavarel 5.3",
     "type": "project",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Daniel Gdz",
