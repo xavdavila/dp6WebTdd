@@ -1,6 +1,6 @@
 # DP6 WEB-PROJECT STRUCTURE
 
-[ ![Codeship Status for controlinn/dp6WebTdd](https://app.codeship.com/projects/29858ed0-94a6-0134-9fe9-32ba05cfff20/status?branch=master)](https://app.codeship.com/projects/186703)
+[ ![Codeship Status for controlinn/dp6WebTdd](https://app.codeship.com/projects/29858ed0-94a6-0134-9fe9-32ba05cfff20/status?branch=dev)](https://app.codeship.com/projects/186703)
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
